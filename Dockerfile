@@ -33,7 +33,7 @@ RUN pecl install apcu \
 RUN apt-get install -y \
         libmcrypt4 \
         libmcrypt-dev \
-        && pecl install mcrypt-1.0.2 \
+        && pecl install mcrypt \
         && docker-php-ext-enable mcrypt
 
 # LDAP

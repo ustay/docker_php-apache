@@ -1,2 +1,3 @@
 #!/bin/sh
-docker build -t ustay/php-apache:`date +"%Y%m%d"` .
+TAG=`date +"%Y%m%d"`
+docker build -t ustay/php-apache:${TAG} .
